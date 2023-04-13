@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippets</title>
+    <link rel="reset" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body>
+    
+    <header>
+       <h1>CSS Snippet Cheatsheet</h1>
+    </header>
+    
+    <main>
+       <section>
+        <h2> Flexbox - Reverse </h2>
+        <h3> Reverse positions of the elements in a row</h3>
+        <pre>  .reverse { 
+                     display: flex; 
+                    flex-direction: row-reverse;  
+                 }  
+                </pre>
+
+            </section>       
+        <section>
+            <h2>Font-variant - Small Caps</h2>
+            <h3>Small-caps displays text in small capital letters</h3>
+            <pre>small-caps::first-line {
+            font-variant: small-caps;
+            font-size: 120%;
+            }</pre>
+        </section>
+
+        <section>
+            <h2>Perspective</h2>
+            <h3>Perspective gives an element perspective in 3D.</h3>
+            <pre>.perspective {
+                    perspective: 500px;
+                    }
+                .card {
+                  transition: transform 1s ease;
+                  &:hover {
+                    transform: rotateY(-60deg);
+                      }
+                }
+            </pre>
+        </section> 
+        <section>
+            <h2> Media Query Screen </h2>
+            <h3> Transforms the elements properties depending om screen size <h3>
+            <pre> @media screen and (max-width: 992px) {
+                    flex-direction: column;
+                    background-color: red
+                }
+            </pre>
+        </section>
+
+        <section>
+            <h2> Flexbox: wrap-reverse </h2>
+            <h3> Multi-lines, opposite to direction defined by flex-direction </h3>
+            <pre> .container  {
+                    display: flex;
+                    flex-wrap: wrap-reverse;
+            
+                    }
+            </pre>
+        </section>
+        <section>
+            <h2> Pseudo-classes </h2>
+            <h3> A keyword added to a selector that specifies a special state of selected element(s) </h3>
+            <pre>
+                button:hover
+                    transform: scale(110%)
+            </pre>
+
+        </section>
+
+   
+
+
+    </main>
+    <footer> 
+        <h3> Fun  and Crazy CSS </h3>
+        
+    </footer>
+    <script src="./code.js"></script>
+</body>
+</html>

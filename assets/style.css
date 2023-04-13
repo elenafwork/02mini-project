@@ -1,0 +1,124 @@
+:root {
+    --light: rgb(11, 220, 235);
+    --dark: rgb(2, 29, 32);
+    --mid: rgb(87, 115, 159);
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: content-box;
+    
+}
+body {
+    background-image: linear-gradient(
+        rgb(2, 29, 32) 0% ,
+        rgb(11, 220, 235) 100%);
+ 
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    color: var(--light);
+    background-color: var(--mid);
+    justify-content: center;
+    border: groove 3px var(--light);
+    border-radius: 5px 0 5px 0;
+    padding: 10px;
+    box-shadow: 1px 1px 8px var(--light);
+    
+}
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1px 1px 4px var(--light);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+section {
+    border: 5px var(--light) groove;
+    border-radius: 8px 0px 8px 0;
+    padding: 20px;
+    margin: 35px;
+    background-color: var(--mid);
+    color: white;
+    box-shadow: 1px 1px 8px var(--light);
+    transition: .5s;
+    flex: 1 0;
+    width:30%;
+
+
+}
+section:hover {
+    transform: scale(110%);
+    transform-origin: initial;
+    align-items: center;
+    cursor: grab;
+    box-shadow: 5px 5px 15px -20px #96e8ee,
+    5px 5px 60px #96e8ee;
+    
+   
+}
+/* section:hover:nth-child(2n) {
+    transform: scale(1.35) translate(-15%);
+}
+
+section:hover:nth-child(2n+1) {
+    transform: scale(1.35) translate(15%);
+} */
+
+pre{
+    text-align: left;
+    margin-left: 20px;
+    font-family: monospace;
+}
+
+section h2 {
+    align-items: flex-start;
+    justify-content: center;
+    border: dashed var(--light);
+}
+
+section h3 {
+    font-size: smaller;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ footer h3 {
+    color: var(--dark);
+    text-shadow: 5px 5px  3px var(--mid);
+
+ }
+
+
+
+ @media screen and (max-width: 992px){
+    
+    
+}
+@media screen and (max-width: 768px){
+    flex-direction: column;
+ section{
+    width: 90vw;
+ }
+}
+@media screen and (max-width: 768px){
+    
+} */
